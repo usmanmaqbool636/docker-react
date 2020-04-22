@@ -9,8 +9,8 @@ services:
         volumes:
             - /app/node_modules
             - '.:/app'
-        # stdin_open: true
-        # tty: true
+        stdin_open: true
+        tty: true
     tests:
         build: 
             context: .
