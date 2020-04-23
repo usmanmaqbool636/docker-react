@@ -5,11 +5,11 @@ before_install:
 - docker build -t usmanmaqbool636/docker-react -f Dockerfile.dev .
 script:
 - docker run -e CI=true usmanmaqbool636/docker-react npm run test -- --coverage
-deploy:
-    provider: heroku
-    name: docker-react-usman
-    api_key:
-      secure: nqcwISTOZB0KqLs2qwpZiX4zQ92PiND3hAvFFT6wdaovhLaikwTOPl6Pr+8DRbA+ujhhqvDGwFOcUDXfn2XkV0bk7JK7QG6CvzH7egF9fyu0xNeFm3D4RQgGQB2W/v37/jJv/WTTj1CZyRctlacmLRZGtxpeNC9LA372z+r01vTFDCMMLWDDInlIDB3bctsj983dQJQi9g0vPwrpYfoDiB49F6nmIhNpGn3QKLbcnNHaIi/t8MBhiOc+o1gXNciUgxZYMT5XLXjbtB68jVy2UW3GrvhhPrmG2rk7RN287rW7jNXpu5v29WBUHMlP2DJvgBeWL1Ce3/b7yUNkwS6V8QnOdjE2LlEC9FsHE1UBZ1pKBwQ8swNvKukTn+Cuai7lTxSRZBWtaZe1QQWJDReK24k4KyxrknZ5GUE0cei+qD2+PB3T/FNS4Jl8J+zUBj7F7Ujr/4TOxXgnw6ucw2Y/imNy7vm0ymb2AR7Bhh52RSTkCph9SmZWDuVKk2DffsiHpIVWXKeus285r6uV5yC68C2SZxvPN7ChLVVgyvkiloXDqG4D4X/xKDBA+FLdzIVerdjfwEX1iC00J1uMv91t63jFRqshEnwFhhfVs5yiEx+dDdR1FWRzmmCr7hMCfmfJ9h/eX+mf+RJMP+x7cBqQ0m/TXSqnYgEaPc7btfJrBwY=
-    app: docker-react-usman
-    true:
-      branch: master
+# deploy:
+#     provider: heroku
+#     name: docker-react-usman
+#     api_key:
+#       secure: nqcwISTOZB0KqLs2qwpZiX4zQ92PiND3hAvFFT6wdaovhLaikwTOPl6Pr+8DRbA+ujhhqvDGwFOcUDXfn2XkV0bk7JK7QG6CvzH7egF9fyu0xNeFm3D4RQgGQB2W/v37/jJv/WTTj1CZyRctlacmLRZGtxpeNC9LA372z+r01vTFDCMMLWDDInlIDB3bctsj983dQJQi9g0vPwrpYfoDiB49F6nmIhNpGn3QKLbcnNHaIi/t8MBhiOc+o1gXNciUgxZYMT5XLXjbtB68jVy2UW3GrvhhPrmG2rk7RN287rW7jNXpu5v29WBUHMlP2DJvgBeWL1Ce3/b7yUNkwS6V8QnOdjE2LlEC9FsHE1UBZ1pKBwQ8swNvKukTn+Cuai7lTxSRZBWtaZe1QQWJDReK24k4KyxrknZ5GUE0cei+qD2+PB3T/FNS4Jl8J+zUBj7F7Ujr/4TOxXgnw6ucw2Y/imNy7vm0ymb2AR7Bhh52RSTkCph9SmZWDuVKk2DffsiHpIVWXKeus285r6uV5yC68C2SZxvPN7ChLVVgyvkiloXDqG4D4X/xKDBA+FLdzIVerdjfwEX1iC00J1uMv91t63jFRqshEnwFhhfVs5yiEx+dDdR1FWRzmmCr7hMCfmfJ9h/eX+mf+RJMP+x7cBqQ0m/TXSqnYgEaPc7btfJrBwY=
+#     app: docker-react-usman
+#     true:
+#       branch: master
